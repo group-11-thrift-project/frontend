@@ -2,295 +2,297 @@
 /* basic set up*/
 /*----------------------------------------------------------------------------------*/
 
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html,body{
-    background-color: #fff;
-    color: #fffcfc;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300px;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+html,
+body {
+  background-color: #fff;
+  color: #fffcfc;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
-.clearfix {zoom: 1}
-.clearfix:after{
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /*----------------------------------------------------------------------------------*/
 /* RESUABLE CODE*/
 /*----------------------------------------------------------------------------------*/
 
-
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /*---HEADINGS---*/
-h1,h2,h3 {
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-
+h1,
+h2,
+h3 {
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-h1{
-    margin-top: 0;
-    margin-bottom: 20px;
-    color:#fff;
-    word-spacing: 4px;
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  word-spacing: 4px;
 }
-h2{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: rgba(21, 177, 117, 0.99);
 }
 
 /*----------------------------------------------------------------------------------*/
 /*HEADER*/
 /*----------------------------------------------------------------------------------*/
 
-
-header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(resources/css/img/0_Growing-money.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 100vh;
-    background-attachment: fixed;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(resources/img/0_Growing-money.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 /*----------------------------------------------------------------------------------*/
 /* MAIN NAV*/
 /*----------------------------------------------------------------------------------*/
-
-.naykas{
-    float: left;
-    margin-top: 10px;
-    padding-left: 5px;
+.naykas {
+  float: left;
+  margin-top: 10px;
+  padding-left: 5px;
+  width: 30%;
 }
 
 /* MAIN-NAVIGATION */
-.main-nav{
-    float: right;
-    display: inline-block;
-    list-style: none;
-    margin-top: 55px; 
-    margin-left: 15px;
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  margin-left: 15px;
 }
 
-.main-nav li{
-    display: inline-block;
-    margin-left: 40px;
-    
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
 }
-.main-nav li a{
-    text-decoration: none;
+.main-nav li a {
+  text-decoration: none;
 }
 
 /*sticky nav*/
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    color:#1fba3; 
-    box-shadow: 0 2px 2px #efefef;
-   
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  color: #1fba3;
+  box-shadow: 0 2px 2px #efefef;
 }
-.sticky main-nav{
-    float: right;
-    display: inline-block;
-    list-style: none;
+.sticky main-nav {
+  float: right;
+  display: inline-block;
+  list-style: none;
 }
 .sticky .naykas h2 {
-    color: #1fba37;
-    margin-top: 20px;
-    font-size: 140%;
+  color: #1fba37;
+  margin-top: 20px;
+  font-size: 140%;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 16px 0px;
-    color: #1fba37; 
-    padding-bottom: 30px;
+  padding: 16px 0px;
+  color: #1fba37;
+  padding-bottom: 30px;
 }
-
 
 /* MAIN-TEXT */
 
-.main-text{
-    position: absolute;
-    width: 1140px;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.main-text {
+  position: absolute;
+  width: 1140px;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.para-text{
-    margin-top: 25px;
-    margin-bottom: 30px;
-    line-height: 145%;
+.para-text {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  line-height: 145%;
 }
 
 .main-nav li :link,
-.main-nav li :visited{
-    color: #fff;
+.main-nav li :visited {
+  color: #fff;
 }
 
 .main-nav li :hover,
-.main-nav li :active{
-    color: #70aa2d;
+.main-nav li :active {
+  color: #70aa2d;
 }
-
 
 /*---BUTTONS----*/
 .btn:link,
 .btn:visited,
-input[type=submit]{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    
-    
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-bec:link,
 .btn-bec:visited,
-input[type=submit]{
-    background-color: rgba(21, 177, 117, 0.99);
-    color: antiquewhite;
+input[type="submit"] {
+  background-color: rgba(21, 177, 117, 0.99);
+  color: antiquewhite;
 }
 .btn-con:link,
-.btn-con:visited{
-    background-color: #fff;
-    color: #0b0a0a;
-    border: 1px solid  rgba(21, 177, 117, 0.99);
-   
+.btn-con:visited {
+  background-color: #fff;
+  color: #0b0a0a;
+  border: 1px solid rgba(21, 177, 117, 0.99);
 }
 
 .btn:hover,
 .btn:active,
-input[type=submit]:hover,
-input[type=submit]:active{
-    background-color: aliceblue;
-    color: green;
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: aliceblue;
+  color: green;
 }
 
 .btn-bec:hover,
-.btn-bec:active{
-    border: 1px solid rgba(21, 177, 117, 0.99);
-    color:  #555555;
+.btn-bec:active {
+  border: 1px solid rgba(21, 177, 117, 0.99);
+  color: #555555;
 }
 
 .btn-con:hover,
-.btn-con:active{
-    background-color: rgba(21, 177, 117, 0.99);
-    color: antiquewhite;
+.btn-con:active {
+  background-color: rgba(21, 177, 117, 0.99);
+  color: antiquewhite;
 }
 
 /*----------------------------------------------------------------------------------*/
 /* HOW IT WORKS */
 /*----------------------------------------------------------------------------------*/
 
-.section-steps{
-    background-color: #fff;
-    color: green;
+.section-steps {
+  background-color: #fff;
+  color: green;
 }
 
-.steps-box:first-child{
-    text-align: right;
-    padding-right: 3%;
-     margin-top: 30px;
-    
-} 
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
 
 /*.steps-box:last-child{
     padding-left: 3%;
     margin-top: 710px; 
 } */
-.app-screen{
-    width: 85%;
+.app-screen {
+  width: 85%;
 }
-.works-step{
-    margin-bottom: 50px; 
-    margin-top: 50px;
-    padding-top: 50px;
-    padding: auto;
-    padding-right: 20%;
-    
+.works-step {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding: auto;
+  padding-right: 20%;
 }
 
-.works-step:last-of-type{
-    margin-bottom: 80px;
-    
+.works-step:last-of-type {
+  margin-bottom: 80px;
 }
-.works-step div{
-    color: #4ca81b;
-    border: 2px solid #1fba37;
-    display: inline-block;
-    border-radius: 50%;
-    height: 50px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;
+.works-step div {
+  color: #4ca81b;
+  border: 2px solid #1fba37;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
 }
 .button-app:link,
 .button-app:visited {
-    border: 0;
-    
+  border: 0;
 }
 
-.button-app img{
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-        
+.button-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
 
 /*----------------------------------------------------------------------------------*/
-/* REGISTER */
+/* login */
 /*----------------------------------------------------------------------------------*/
 
-.register{
-    background-color: rgba(201, 222, 217, 0.79);
-    color: #1b1a24;
-    margin-top: 0;
-    padding-bottom: 35px;
-    display: none;
-}
-.register-form{
-     width: 157%;
-    margin: 0 auto;
-    padding-left: 35%;
-    
-}
 
-input[type=text],
-input[type=email],
-input[type=tel],
-select{
-    width:23%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid rgba(17, 167, 63, 0.99);
-    margin-top: 3px;
+/*
+.register {
+  background-color: #fff;
+  color: #1b1a24;
+  margin: 0 auto;
+  padding-bottom: 35px;
+    text-align: center;
+ 
+}
+.register-form {
+  width: 75%;
+  margin: 0 auto;
+}
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+*/
+
+
+/*input[type="text"],
+input[type="email"],
+input[type="tel"],{
+  width: 2%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid rgba(17, 167, 63, 0.99);
+  margin-top: 3px;
 }
 /*checkbox{
     width: 0%;
@@ -298,83 +300,186 @@ select{
 }
 *?
 /* sign up botton */
-.sign input{
-    margin-top: 25px;
+.sign input {
+  margin-top: 25px;
 }
-
 
 /*----------------------------------------------------------------------------------*/
 /*PAYMENT */
 /*----------------------------------------------------------------------------------*/
 
- .payment{
-     color: green;
-     margin-top: 40px;
-     margin-bottom: 150px; 
+.payment {
+  color: green;
+  margin-top: 40px;
+  margin-bottom: 150px;
 }
-.payment-form{
-    width: 157%;
-    margin: 0 auto;
-    padding-left: 35%;
+.payment-form {
+  width: 157%;
+  margin: 0 auto;
+  padding-left: 35%;
 }
 /* for the expire date and security code */
-.field-container input{
-    width: 9%;
+.field-container input {
+  width: 9%;
 }
 
 /* the payment button*/
-.sub input{
-    width: 23%;
-    margin-top: 24px;
+.sub input {
+  width: 23%;
+  margin-top: 24px;
 }
 
+/* SIGN-UP*/
+/*---------------------------------------------------------------------------------*/
+.section-plans{
+    background-color:#fff;
+}
+.plan-cards{
+    display: flex;
+    
+}
+.cards{
+   width: 500px;
+   display: flex;
+    margin-right: 52%;
+    padding-right: 550px;
+    
+}
+.plan-box{
+    background-color: #fff;
+    justify-content: center;
+    color: rgba(21, 177, 117, 0.99);
+    border-radius: 5px;
+    width: 350px;
+    margin-left: 15%;
+    margin-right: 10%;
+    border-collapse: separate;
+    border-spacing: 15%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e5dfdf;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+    margin-bottom: 130px;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:  #140b0b;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-money{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+    
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
 /*----------------------------------------------------------------------------------*/
 /* FOOTER */
 /*----------------------------------------------------------------------------------*/
-.footer-override{
-    background-color: rgba(21, 177, 117, 0.99);
-    padding: 10px;
-    font-size: 100%;
-    color: #fff;
-
+.footer-override {
+  background-color: rgba(21, 177, 117, 0.99);
+  padding: 10px;
+  font-size: 100%;
+  color: #fff;
 }
 
-.footer-nav{
-    list-style: none;
-    float: left;
-    text-decoration: none;
+.footer-nav {
+  list-style: none;
+  float: left;
+  text-decoration: none;
 }
-.footer-override p{
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 40px auto;
-
+.footer-override p {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 40px auto;
 }
 
 /* copyright*/
 
-.copy p{
-    text-align: center;
-    vertical-align: middle;
+.copy p {
+  text-align: center;
+  vertical-align: middle;
+}
+/*----------------------------------------------------------------------------------*/
+/* LOGIN FORM*/
+/*---------------------------------------------------------------------------------*/
+
+.login{
+    margin: 0 auto;
+    width:50%;
+    border:1px solid black;
+    border-radius: 5px;
+    height:700px;
+    margin-top: 40px;
+    background-color: rgba(77, 217, 163, 0.99);
+    color: rgba(32, 75, 59, 0.99);
+   
+}
+.login-header{
+    margin:
+}
+.login-header h2{
+    color: #fff;
+    
+}
+.login-container{
+    margin: 0 auto;
+    width:70%;
+
+}
+.login-wrapper{
+    background-color:#fff;
+    margin: 0 auto;
+    width:80%;
+    padding-top: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.login-textbox{
+    width: 100%;
+    height: 40px;
+    background-color: #f2f0e7;
+}
+/*
+.login-form input{
+    border-radius:5px;
+    background-color: rgba(226, 209, 209, 0);
+    
+    }
+*/
+.login-form div{
+    width:80%;
+    margin:0 auto;
+}
+.login-btn{
+    
+    margin-bottom: 35px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(21, 177, 117, 0.99);
+    
+}
+.login-btn-container{
+    text-align: center;
+}
